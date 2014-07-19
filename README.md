@@ -1,6 +1,7 @@
 # Kapture
 
-TODO: Write a gem description
+Simple string core extension to help out when working with regex capture groups.
+Saves checking for size or nil every time you might have a capture group.
 
 ## Installation
 
@@ -18,7 +19,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Check the unit tests for details.
+
+Currently 3 instance methods are added to String, #capture, #capture_first, #capture_last
+
+    example_string = 'one potato, two potato, three potato, four'
+    
+    # String#capture
+    
+    example_string.capture(/(one).*(two).*(three)/) => ['one', 'two', 'three']
+  
+    example_string.capture(/(five)/) => []
+   
+    # String#capture_first
+    
+    example_string.capture_first(/(one).*(two).*(three)/) => 'one'
+    
+    example_string.capture_first(/(five)/) => nil
+   
+    # String#capture_last
+    
+    example_string.capture_last(/(one).*(two).*(three)/) => 'three'
+    
+    example_string.capture_last(/(five)/) => nil
 
 ## Contributing
 
