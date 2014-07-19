@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Kapture::VERSION
   spec.authors       = ["Seb Glazebrook"]
   spec.email         = ["me@sebglazebrook.com"]
-  spec.summary       = %q{TODO: Simple string core extension to help out when working with regex capture groups.}
-  spec.description   = %q{TODO: Simple string core extension to help out when working with regex capture groups. Saves checking for size or nil every time you might have a capture group.}
+  spec.summary       = %q{Simple string core extension to help out when working with regex capture groups.}
+  spec.description   = %q{Simple string core extension to help out when working with regex capture groups. Saves checking for size or nil every time you might have a capture group.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
